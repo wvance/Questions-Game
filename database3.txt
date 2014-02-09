@@ -1,0 +1,123 @@
+How does declaring a variable differ from initializing a variable?
+Declaring a variable allocates memory; initializing a variable determines its type
+Declaring a variable creates a variable with a specific type; initializing a variable assigns a value to the variable
+Declaring a variable is optional, but initializing a variable must be done
+Initializing a variable requires getting input from the user
+Declaring and initializing a variable are the same thing
+a
+
+What happens after the expression i-- is executed, suppose i is an integer?
+The expression returns a value equal to (i-1), but the value of 'i' remains the same
+The value of 'i' is decreased by 2, because it's equivalent to subtracting 1 twice from i
+The value of 'i' becomes 0 because it is deceased by i
+The value of 'i' is decreased by 1
+The value of 'i' is increased by 1
+a
+
+Which of the following exists the loop?
+It cannot be done
+When the loop-continuation-condition becomes true
+Use a continue statement
+Use a break statement
+Define an exception catch block within the loop body
+a
+
+Which of the following is TRUE when calling a method?
+A called method returns program control to the caller only when its method-ending closing brace is reached.
+It is a valid design that a statement in the main method invokes a method A, and also a statement in method A invokes another method B. *
+When you invoke a method with a integer parameter, the memory address of the integer is passed to the parameter. This is referred to as pass-by-value.
+Each time a method is invoked, the system store parameters and variables in an array.
+When a method finishes its work and returns the program control to its caller, the space that stores associated parameters and variables is kept intact till the end of program execution.
+a
+
+Which of the following statements correctly declares an array and allocates space for array elements? 
+int[ ] a;
+int a[5];
+int a = {};
+int a =new int[5];
+int[] a = 1,2,3,4,5;
+a
+
+Suppose two arrays a1 and a2 are created. The statement a1 == a2 returns true if two arrays have identical corresponding elements.
+True
+False
+a
+
+Two methods can have the same name as long as they have parameter lists of different data types.
+True
+False
+a
+
+A protected variable can be accessed by its subclass directly without using a public accessor or mutator.
+True
+False
+a
+
+Every exception which is thrown must be caught with a catch block
+True
+False
+a
+
+Which of the following is TRUE about constructors?
+Constructors have a return type.
+Constructors cannot throw exceptions.
+Constructors can have different names from the class where they are defined.
+If a class has a constructor explicitly defined, another default no-arg constructor is automatically provided by the compiler.
+A constructor is invoked using the new operator.
+a
+
+A class is defined as public means that
+the class can only be accessed by the main method
+the class's private variables can be manipulated by other classes
+the class can be used by classes in other packages
+the class cannot have private variables
+the class cannot have private methods
+a
+
+A reference variable references an object in memory. Which of the following is TRUE about a reference variable?
+A reference variable can reference more than one object at the same time
+Two reference variables can reference the same object in memory *
+A reference variable can reference primitive type values
+A reference variable cannot reference an array
+Two reference variables always have the same value if they reference to the two objects of the same content
+a
+
+Suppose the class Shape is the superclass of the class Circle. Which of the following is TRUE?
+The class Shape is a subclass of the class Circle.
+The class Circle cannot have new methods besides the methods inherited from the class Shape, such as getRadius().
+The class Circle can have new data fields, such as radius, besides the data fields inherited from the class Shape.
+The class Circle does not inherit static data fields and static methods, such as printShape(o:Object), from the class Shape.
+The class Circle cannot override the instance methods of the class Shape, such as printShape().
+a
+
+Polymorphism allows a variable to reference:
+only its declared type
+any type of objects
+any subclass instance
+any superclass instance
+An Object instance
+a
+
+To override a method in the superclass, which of the following is TRUE?
+The method can have a different method name
+The method can have a parameter list of different length
+The method can have the parameters in a different order
+The method can have parameters of different types
+The method must have the same return type *
+a
+
+To override a method in the superclass, which of the following is TRUE?
+The method can have a different method name
+The method can have a parameter list of different length
+The method can have the parameters in a different order
+The method can have parameters of different types
+The method must have the same return type *
+a
+
+To override a method in the superclass, which of the following is TRUE?
+The method can have a different method name
+The method can have a parameter list of different length
+The method can have the parameters in a different order
+The method can have parameters of different types
+The method must have the same return type *
+a

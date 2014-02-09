@@ -1,0 +1,312 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Wesley Vance 
+\end_layout
+
+\begin_layout Standard
+520007455
+\end_layout
+
+\begin_layout Standard
+Programming Assignment 1
+\end_layout
+
+\begin_layout Enumerate
+
+\noun on
+Program Description:
+\noun default
+ The purpose of this programming assignment is to learn about organizing
+ data using the STL classes 
+\emph on
+vector
+\emph default
+\noun on
+ 
+\noun default
+and
+\noun on
+ 
+\emph on
+\noun default
+list, 
+\emph default
+analyzing the best and worst scenarios for the data operations and mastering
+ C++ programming sills.
+ The method for attaining the above sills is to create a C++ game called
+ Smarty Pants C++ Trivia Game.
+ The program reads in 15 multiple choice questions from a text file.
+ The player provides answers to 10 questions displayed on the screen and
+ gets imediate feedback about the answer and keeps score.
+ The questions are selected randomly and the final score is displayed with
+ a pass/fail criteria.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\noun on
+Data Structures Description
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\noun on
+Theoretical Definition: 
+\noun default
+A linked list is a data structure consisting of a group of nodes wich together
+ represent a sequence.
+ Each note is comprised of a datum and a reference, aka a link, to the next
+ node in the sequence.
+ A vector is an implementation of an aray with fast random access and an
+ ability to automatically resize when appending elements (wikipedia).
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\noun on
+Real implementaiton: 
+\noun default
+The program employs two different ways for the data to be structured.
+ The outcome of the game is not affected on the structures, rather just
+ the backend.
+ The linked list was harder to implement in terms of how new it was to me.
+ The vector implmenetation was simpler, but also more limiting when eliminating
+ the random questions.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\noun on
+Alaysis of best and worst scenarios for vector and linked list operations:
+ 
+\noun default
+A vector is often preferable when; you need contiguous memory.
+ A list is best when you want to insert in the middle of a set of data.
+ You never have to reacllocate memory, as you just add a new element.
+ I used Vectors as much as possible, but when I need to input a new element
+ in the center of existing data, I use a list.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\noun on
+Algorithm Descripton: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\noun on
+Randomization: 
+\noun default
+Using
+\noun on
+ 
+\noun default
+srand I am able to get a random integer between 1 and 15, which corresponds
+ to the questions in the .txt file.
+ Once a question has been used, I delete it from the number choices (1-15).
+ After the program picks 10, it stops getting more and totals the score
+ for a final result.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\noun on
+Game flow: 
+\noun default
+The game selects a random question from the pool of 15 pre-written questions
+ and picks 10 of them at random and lets the user answer them, while keeping
+ up with the users score.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\noun on
+Program Organization and Descripton of Clsses: 
+\noun default
+The definitions are in the headerfile and the implementations are in the
+ .cpp file.
+ The main program runs in main.cpp.
+ I created a class called questions, which takes the question from a textfile,
+ along with its answers and with each instance of the class displayed.
+ The main data structures are stored inside the Questions class.
+ In order to compile the program compile it with the command: 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+clear; g++-4.8 -std=c++11 *cpp
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\emph default
+or 
+\begin_inset Quotes eld
+\end_inset
+
+Make All
+\begin_inset Quotes erd
+\end_inset
+
+ and run the program with 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+./a.out
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\noun on
+Logical Exceptions: 
+\noun default
+The program will terminate if you give it invalid data types, It will throw
+ and catch the error in the main program.
+ The program will terminate if you give it a noncharacter input for a question
+ answer, or if supplied an incorrect filename in the beginning, for the
+ textifile to open to.
+ The .txt file must include formatted data with line 1 being the question,
+ lines 2-6 the answers to the question and the final line is the correct
+ answer to the problem (with no extra spaces).
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\noun on
+C++ Object oriented or generic programming features C++11: 
+\end_layout
+
+\begin_layout Enumerate
+
+\noun on
+Testing Results
+\noun default
+: Both implementations work within their scope of the problem.
+ The program exits if a users input is invalid.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\noun on
+Vector
+\noun default
+: The vector implementation of the problem works, allowing the user to select
+ the correct answer, tallies the scores up, and displays if the user passed
+ or failed.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\noun on
+Linked List: 
+\noun default
+The linked list implementation of the problem also works, and allows the
+ user to select the answers in the same manner the vector implementation
+ allowed.
+ The program will also tally up the scores and display if the user passes
+ or fails.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\noun on
+Works Cited
+\end_layout
+
+\begin_layout Standard
+"Sequence Container (C++)." Wikipedia.
+ Wikimedia Foundation, 30 Jan.
+ 2014.
+ Web.
+ 30 Jan.
+ 2014.
+\end_layout
+
+\end_body
+\end_document
