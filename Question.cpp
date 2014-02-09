@@ -3,6 +3,7 @@ using namespace std;
 
 bool Question::check_answer_vec(char answer){
 	char correct_answer;
+	//Need to fix this to be more readable code.
 	if(q_vector->at(q_vector->size() - 1) == "a")
 		correct_answer = 'a';
 	if(q_vector->at(q_vector->size() - 1) == "b")
@@ -23,6 +24,8 @@ bool Question::check_answer_vec(char answer){
 
 bool Question::check_answer_list(char answer){
 	char correct_answer;
+	
+	//Need to fix this to be more readable code.
 	string i = l_elem_at_rank(q_list->size()-1);
 	if(i == "a")
 		correct_answer = 'a';
